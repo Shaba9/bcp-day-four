@@ -10,21 +10,8 @@
 <body>
     <h1>Apps FTW!</h1>
 
-    <!-- <form onsubmit="return handleSubmit(event), false;">
-        <p>
-            <label>
-                Name:
-                <input name="name" type="text" value="">
-            </label>
-        </p>
-
-        <p>
-            <label>
-                Comments:
-            <textarea></textarea> 
-            </label>
-        </p>
-
+    <form onsubmit="return handleSubmit(event), false;">
+        
         <p>
             <label>
                 <input checked value="olives" name="toppings" type="checkbox">Olives
@@ -35,41 +22,22 @@
         </p>
 
         <p>
-            <input value ="A" name="grade" type="radio">A
-            <input vlaue="B" name="grade" type="radio">B
-            <input value="C" name="grade" type="radio">C
-        </p> -->
-        <form onsubmit="return handleSubmit(event), false;">
+                <input value="thin" name="crust" type="radio">Thin
+                <input value="regular" name="crust" type="radio">Regular
+        </p>
+
+        <p>
             <label>
-                How many animals do I have?
-                <input name="guess" type="number" value="">
-            </label>
-            <p>
-                <button>Guess</button> 
-            </p>
-            <p id="result">
-                Make a guess!
-            </p>
-           
+                Special Instructions:
+                <input name="instructions" type="textbox" value=""> 
+            </label>         
+        </p>
 
-            <p>
-                    <label>
-                        <input checked value="olives" name="toppings" type="checkbox">Olives
-                    </label>
-                    
-                    <input checked value="pepperoni" name="toppings" type="checkbox">Pepperoni
-                    <input value="pineapple" name="toppings" type="checkbox">Pineapple
-                </p>
-        
-                <p>
-                    <input value ="A" name="grade" type="radio">A
-                    <input value="B" name="grade" type="radio">B
-                    <input value="C" name="grade" type="radio">C
-                </p>
-        </form>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
        
-    <!-- </form> -->
-
     <script src="index.js"></script>
 </body>
 </html>
