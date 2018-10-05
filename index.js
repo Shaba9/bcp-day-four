@@ -1,10 +1,38 @@
+function handleSubmit(event) {
+    var form = event.target;
+    var elements = form.elements;
+    var guess = elements.guess.value;
 
-var count = 1;
+    var result = document.getElementById('result');
+    // var name = elements.name.value;
+    // console.log('name', name);
 
-function sayHello(){
-    console.log('hello world!, for the ', count, 'time');
-    count++;
+    // var comments = elements.name.value;
+    // console.log('comments', comments);
+
+    // var toppings = elements.name.value;
+    // console.log('toppings', toppings);
+
+    // var grade = elements.name.value;
+    // console.log('grade', grade);
+
+
+    
+
+    // result.textContent = 'You made a guess of ' + guess;
+
+    console.log(guess);
+    
+    var correct = 7;
+
+    if (guess == correct){
+        result.textContent = 'Correct';
+    } else if(guess < correct){
+        result.textContent = 'Too low';
+    }else {
+        result.textContent = 'Too high';
+    }
+
+    console.log(elements.grade.value);
+    console.log(elements.toppings.slice(0,3).value);
 }
-
-sayHello();
-
